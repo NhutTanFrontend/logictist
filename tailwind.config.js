@@ -13,7 +13,8 @@ module.exports = {
         'main-blue': '#2A4189',
         'second-blue': '#337AB7',
         'main-blue-hover': '#1F336E',
-        'background-gray': '#E9ECEF'
+        'background-gray': '#E9ECEF',
+        'second-gray': '#F1F1F1'
       }
     },
   },
