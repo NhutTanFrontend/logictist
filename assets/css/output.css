@@ -935,6 +935,11 @@ video {
   height: 2.5rem;
 }
 
+.size-12 {
+  width: 3rem;
+  height: 3rem;
+}
+
 .size-14 {
   width: 3.5rem;
   height: 3.5rem;
@@ -958,16 +963,6 @@ video {
 .size-6 {
   width: 1.5rem;
   height: 1.5rem;
-}
-
-.size-8 {
-  width: 2rem;
-  height: 2rem;
-}
-
-.size-12 {
-  width: 3rem;
-  height: 3rem;
 }
 
 .h-12 {
@@ -1155,22 +1150,6 @@ video {
 
 .basis-\[60\%\] {
   flex-basis: 60%;
-}
-
-.basis-1\/2 {
-  flex-basis: 50%;
-}
-
-.basis-\[\] {
-  flex-basis: ;
-}
-
-.basis-\[75\%\] {
-  flex-basis: 75%;
-}
-
-.basis-\[85\%\] {
-  flex-basis: 85%;
 }
 
 .basis-full {
@@ -2617,11 +2596,6 @@ video {
   font-size: 5.5rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -2639,6 +2613,10 @@ video {
 
 .text-xs {
   font-size: 12px;
+}
+
+.text-\[5rem\] {
+  font-size: 5rem;
 }
 
 .font-bold {
@@ -2777,6 +2755,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .underline {
@@ -3404,6 +3386,10 @@ input[type="number"] {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .xs\:text-\[5\.5rem\] {
+    font-size: 5.5rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -3485,10 +3471,6 @@ input[type="number"] {
 
   .xl\:basis-\[85\%\] {
     flex-basis: 85%;
-  }
-
-  .xl\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-3 {
