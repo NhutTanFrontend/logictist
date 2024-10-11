@@ -1095,6 +1095,10 @@ video {
   width: 100vw;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .min-w-28 {
   min-width: 7rem;
 }
@@ -2592,8 +2596,8 @@ video {
   font-size: 4.5rem;
 }
 
-.text-\[5\.5rem\] {
-  font-size: 5.5rem;
+.text-\[5rem\] {
+  font-size: 5rem;
 }
 
 .text-lg {
@@ -2613,10 +2617,6 @@ video {
 
 .text-xs {
   font-size: 12px;
-}
-
-.text-\[5rem\] {
-  font-size: 5rem;
 }
 
 .font-bold {
@@ -2755,10 +2755,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .underline {
@@ -3443,6 +3439,10 @@ input[type="number"] {
 }
 
 @media (min-width: 1024px) {
+  .lg\:basis-\[85\%\] {
+    flex-basis: 85%;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
