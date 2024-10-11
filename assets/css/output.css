@@ -810,6 +810,10 @@ video {
   margin-top: 1.75rem;
 }
 
+.mt-3\.5 {
+  margin-top: 0.875rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1093,10 +1097,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .min-w-28 {
@@ -3467,10 +3467,6 @@ input[type="number"] {
 
   .xl\:basis-\[75\%\] {
     flex-basis: 75%;
-  }
-
-  .xl\:basis-\[85\%\] {
-    flex-basis: 85%;
   }
 
   .xl\:grid-cols-3 {
