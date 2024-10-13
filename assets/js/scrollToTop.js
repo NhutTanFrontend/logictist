@@ -10,7 +10,7 @@ window.onscroll = function() {
     const windowHeight = window.innerHeight;
     const scrollPosition = document.body.scrollTop || document.documentElement.scrollTop;
     
-    const vhThreshold = windowHeight * 0.35;
+    const vhThreshold = windowHeight * 0.5;
 
     if (scrollPosition > vhThreshold) {
         button.style.display = "block";
