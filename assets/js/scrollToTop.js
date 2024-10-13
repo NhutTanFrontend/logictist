@@ -7,7 +7,7 @@ function scrollToTop() {
 
 window.onscroll = function() {
     const button = document.getElementById("scrollToTopButton");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
         button.style.display = "block";
     } else {
         button.style.display = "none";
