@@ -7,7 +7,12 @@ function scrollToTop() {
 
 window.onscroll = function() {
     const button = document.getElementById("scrollToTopButton");
-    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+    const windowHeight = window.innerHeight;
+    const scrollPosition = document.body.scrollTop || document.documentElement.scrollTop;
+    
+    const vhThreshold = windowHeight * 0.35;
+
+    if (scrollPosition > vhThreshold) {
         button.style.display = "block";
     } else {
         button.style.display = "none";
