@@ -8,8 +8,10 @@ window.addEventListener('scroll', function() {
     if (scrollPosition > triggerPosition) {
         navbarBlock.classList.add('opacity-0');
         navbarBlock2.classList.add('opacity-100');
+        navbarBlock2.classList.remove('pointer-events-none')
     } else {
         navbarBlock.classList.remove('opacity-0');
         navbarBlock2.classList.remove('opacity-100');
+        navbarBlock2.classList.add('pointer-events-none')
     }
 });

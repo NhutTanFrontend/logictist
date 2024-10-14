@@ -1046,6 +1046,10 @@ video {
   height: 100vh;
 }
 
+.max-h-16 {
+  max-height: 4rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -2554,14 +2558,6 @@ video {
   padding-top: 0.5rem;
 }
 
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -3453,11 +3449,6 @@ input[type="number"] {
 
   .xs\:text-\[5rem\] {
     font-size: 5rem;
-  }
-
-  .xs\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 
