@@ -9,7 +9,7 @@
     <title>Logistics</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <!-- Trans languagues -->
     <section class="bg-main-blue">
         <div class="container mx-auto">
@@ -102,7 +102,84 @@
         </div>
     </header>
 
-    <nav class="bg-main-blue z-[100] w-full top-0 left-0" id="navbar-block">
+    <nav class="bg-main-blue z-[100] w-full transition-all duration-200" id="navbar-block">
+        <div class="container mx-auto">
+            <div
+                class="w-[90%] mx-auto flex justify-end uppercase font-bold text-[0.85rem] text-gray-300 gap-10 items-center">
+                <div class="md:flex hidden gap-5">
+                    <div class="py-6"><a class="text-white transition-all duration-200" href="./index.html">Trang
+                            chủ</a></div>
+                    <div class="py-6"><a class="hover:text-white transition-all duration-200"
+                            href="./about-us.html">Giới thiệu</a></div>
+
+                    <div class="relative py-6 z-30" id="show-services">
+                        <nav class="flex items-center">
+                            <ul class="flex space-x-8">
+                                <li class="relative">
+                                    <a href="./services.html"
+                                        class="flex items-center gap-1 w-max hover:text-white transition-all duration-200">Dịch
+                                        Vụ <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </a>
+                                    <!-- Dropdown menu -->
+                                    <ul class="absolute z-30 hidden bg-white text-black mt-2 shadow-lg w-max -translate-x-1/2 left-1/2"
+                                        id="services-block">
+                                        <li
+                                            class="py-2 text-[0.85rem] relative after:absolute after:content-[''] after:h-[1px] after:w-10 after:bg-main-blue after:-left-10 hover:after:left-6 after:transition-all after:duration-300 overflow-hidden hover:bg-gray-100 px-2 hover:text-main-blue transition-all duration-300">
+                                            <a href="./sea-trans.html" class="block px-4 py-2">Vận Tải Đường
+                                                Biển</a>
+                                        </li>
+                                        <li
+                                            class="py-2 text-[0.85rem] relative after:absolute after:content-[''] after:h-[1px] after:w-10 after:bg-main-blue after:-left-10 hover:after:left-6 after:transition-all after:duration-300 overflow-hidden hover:bg-gray-100 px-2 hover:text-main-blue transition-all duration-300">
+                                            <a href="./road-trans.html" class="block px-4 py-2">Vận Tải Đường
+                                                Bộ</a>
+                                        </li>
+                                        <li
+                                            class="py-2 text-[0.85rem] relative after:absolute after:content-[''] after:h-[1px] after:w-10 after:bg-main-blue after:-left-10 hover:after:left-6 after:transition-all after:duration-300 overflow-hidden hover:bg-gray-100 px-2 hover:text-main-blue transition-all duration-300">
+                                            <a href="./airport.html" class="block px-4 py-2">Vận Tải Hàng
+                                                Không</a>
+                                        </li>
+                                        <li
+                                            class="py-2 text-[0.85rem] relative after:absolute after:content-[''] after:h-[1px] after:w-10 after:bg-main-blue after:-left-10 hover:after:left-6 after:transition-all after:duration-300 overflow-hidden hover:bg-gray-100 px-2 hover:text-main-blue transition-all duration-300">
+                                            <a href="./customs-procedures.html" class="block px-4 py-2">Thủ Tục Hải
+                                                Quan</a>
+                                        </li>
+                                        <li
+                                            class="py-2 text-[0.85rem] relative after:absolute after:content-[''] after:h-[1px] after:w-10 after:bg-main-blue after:-left-10 hover:after:left-6 after:transition-all after:duration-300 overflow-hidden hover:bg-gray-100 px-2 hover:text-main-blue transition-all duration-300">
+                                            <a href="./import-export.html" class="block px-4 py-2">Xuất Nhập
+                                                Khẩu</a>
+                                        </li>
+                                        <li
+                                            class="py-2 text-[0.85rem] relative after:absolute after:content-[''] after:h-[1px] after:w-10 after:bg-main-blue after:-left-10 hover:after:left-6 after:transition-all after:duration-300 overflow-hidden hover:bg-gray-100 px-2 hover:text-main-blue transition-all duration-300">
+                                            <a href="./warehouse.html" class="block px-4 py-2">Kho Bãi</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                    <div class="py-6"><a class="hover:  text-white transition-all duration-200" href="./news.html">Tin
+                            tức</a></div>
+                    <div class="py-6"><a class="hover:text-white transition-all duration-200"
+                            href="./about-us.html">Liên hệ</a></div>
+                </div>
+                <div class="md:hidden block py-2 w-max" id="show-nav-responsive">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-10 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="bg-main-blue z-[100] w-full top-0 left-0 transition-all fixed duration-200 opacity-0" id="navbar-block-2">
         <div class="container mx-auto">
             <div
                 class="w-[90%] mx-auto flex justify-end uppercase font-bold text-[0.85rem] text-gray-300 gap-10 items-center">
@@ -308,9 +385,9 @@
         <div class="container mx-auto sm:py-20 py-14">
             <div class="w-[90%] mx-auto">
                 <div class="relative uppercase">
-                    <h2 class="text-4xl font-medium absolute left-1/2 z-10 -translate-x-1/2">Dịch vụ</h2>
+                    <h2 class="xs:text-4xl text-3xl font-medium absolute left-1/2 z-10 -translate-x-1/2">Dịch vụ</h2>
                     <p
-                        class="absolute left-1/2 -translate-x-1/2 top-4 -translate-y-1/2 text-[4.5rem] font-bold text-gray-300 opacity-50 w-max">
+                        class="absolute left-1/2 -translate-x-1/2 top-4 -translate-y-1/2 xs:text-[4.5rem] text-5xl font-bold text-gray-300 opacity-50 w-max">
                         Dịch vụ</p>
                 </div>
             </div>
@@ -396,9 +473,9 @@
         <div class="container mx-auto sm:py-20 py-14">
             <div class="w-[90%] mx-auto">
                 <div class="relative uppercase">
-                    <h2 class="text-4xl font-medium absolute left-1/2 z-10 -translate-x-1/2">TIN TỨC</h2>
+                    <h2 class="xs:text-4xl text-3xl font-medium absolute left-1/2 z-10 -translate-x-1/2">TIN TỨC</h2>
                     <p
-                        class="absolute left-1/2 -translate-x-1/2 top-4 -translate-y-1/2 text-[4.5rem] font-bold text-gray-300 opacity-50 w-max">
+                        class="absolute left-1/2 -translate-x-1/2 top-4 -translate-y-1/2 xs:text-[4.5rem] text-5xl font-bold text-gray-300 opacity-50 w-max">
                         TIN TỨC</p>
                 </div>
             </div>
@@ -459,10 +536,10 @@
             style="background-image: url('./assets/images/bg-map.png');">
             <div class="w-[90%] mx-auto">
                 <div class="relative uppercase">
-                    <h2 class="xs:text-4xl text-3xl font-medium absolute left-1/2 z-10 -translate-x-1/2 w-max">Hợp tác
+                    <h2 class="xs:text-4xl text-2xl font-medium absolute left-1/2 z-10 -translate-x-1/2 w-max">Hợp tác
                         cùng chúng tôi</h2>
                     <p
-                        class="absolute left-1/2 -translate-x-1/2 top-4 -translate-y-1/2 text-[5rem] xs:text-[5.5rem] font-bold text-gray-300 opacity-60 w-max">
+                        class="absolute left-1/2 -translate-x-1/2 top-4 -translate-y-1/2 text-5xl xs:text-[5rem] font-bold text-gray-300 opacity-60 w-max">
                         HV Logs</p>
                 </div>
             </div>
@@ -483,10 +560,10 @@
             <div class="w-[90%] mx-auto flex justify-center gap-10 uppercase">
                 <div class="xl:basis-[75%] lg:basis-[85%] basis-full flex flex-col gap-5">
                     <div class="relative uppercase">
-                        <h2 class="xs:text-4xl text-3xl font-medium absolute left-1/2 z-10 -translate-x-1/2 w-max">Hợp
-                            tác cùng chúng tôi</h2>
+                        <h2 class="xs:text-4xl text-2xl font-medium absolute left-1/2 z-10 -translate-x-1/2 w-max">Hợp tác
+                            cùng chúng tôi</h2>
                         <p
-                            class="absolute left-1/2 -translate-x-1/2 top-4 -translate-y-1/2 text-[5rem] xs:text-[5.5rem] font-bold text-gray-300 opacity-60 w-max">
+                            class="absolute left-1/2 -translate-x-1/2 top-4 -translate-y-1/2 text-5xl xs:text-[5rem] font-bold text-gray-300 opacity-60 w-max">
                             HV Logs</p>
                     </div>
                     <hr>
@@ -723,6 +800,14 @@
             </div>
         </div>
     </footer>
+    
+    <section>
+        <div class="container mx-auto">
+            <div class="w-[90%] mx-auto flex flex-col items-end pt-2 pb-2">
+                <p class="text-main-blue xs:text-base text-sm">Developed by <a target="_blank" rel="noopener noreferrer" href="" class="font-bold">dangkhoabach</a> and <a target="_blank" rel="noopener noreferrer" href="https://github.com/NhutTanFrontend" class="font-bold">tranlenhuttan</a></p>
+            </div>
+        </div>
+    </section>
 
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/slider.js"></script>
