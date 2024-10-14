@@ -10,23 +10,21 @@ function checkScroll() {
     const windowHeight = window.innerHeight;
     const scrollPosition = document.body.scrollTop || document.documentElement.scrollTop;
 
-    const vhThreshold = windowHeight * 0.6; // 60% chiều cao màn hình
+    const vhThreshold = windowHeight * 0.6;
 
-    // Thêm hoặc xóa lớp "hidden" dựa trên vị trí cuộn
     if (scrollPosition > vhThreshold) {
-        button.classList.remove('hidden');
+        button.classList.remove('opacity-0');
+        button.classList.remove('pointer-events-none');
     } else {
-        button.classList.add('hidden');
+        button.classList.add('opacity-0');
+        button.classList.add('pointer-events-none');
     }
 }
 
-// Sự kiện cuộn trang
 window.onscroll = checkScroll;
 
-// Đảm bảo kiểm tra khi trang mới tải
 window.onload = checkScroll;
 
-// Ẩn nút ngay lập tức khi người dùng bắt đầu chuyển trang
 window.addEventListener('beforeunload', function() {
     const button = document.getElementById("scrollToTopButton");
     button.classList.add('hidden');
