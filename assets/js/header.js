@@ -1,5 +1,7 @@
 const showServices = document.getElementById("show-services")
+const showServices2 = document.getElementById("show-services-2")
 const servicesBlock = document.getElementById("services-block")
+const servicesBlock2 = document.getElementById("services-block-2")
 const showServicesResponsive = document.getElementById("show-services-responsive")
 const servicesBlockResponsive = document.getElementById("services-block-responsive")
 const showNavResponsive = document.getElementById("show-nav-responsive")
@@ -9,6 +11,7 @@ const closeNavResponsive = document.getElementById("close-nav-responsive")
 let isShowNavResponsive = false
 let isShowServiceResponsive = false
 let isShowService = false
+let isShowService2 = false
 
 const checkShowServices = () => {
     if(isShowService){
@@ -17,6 +20,15 @@ const checkShowServices = () => {
     } else {
         servicesBlock.classList.remove("block")
         servicesBlock.classList.add("hidden")
+    }
+}
+const checkShowServices2 = () => {
+    if(isShowService2){
+        servicesBlock2.classList.add("block")
+        servicesBlock2.classList.remove("hidden")
+    } else {
+        servicesBlock2.classList.remove("block")
+        servicesBlock2.classList.add("hidden")
     }
 }
 
@@ -50,6 +62,15 @@ showServices.addEventListener("mouseenter", () => {
 showServices.addEventListener("mouseleave", () => {
     isShowService = false
     checkShowServices()
+})
+showServices2.addEventListener("mouseenter", () => {
+    isShowService2 = true
+    checkShowServices2()
+})
+
+showServices2.addEventListener("mouseleave", () => {
+    isShowService2 = false
+    checkShowServices2()
 })
 
 showServicesResponsive.addEventListener('click', () => {
