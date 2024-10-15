@@ -1046,10 +1046,6 @@ video {
   height: 100vh;
 }
 
-.max-h-16 {
-  max-height: 4rem;
-}
-
 .max-h-20 {
   max-height: 5rem;
 }
@@ -1121,6 +1117,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .min-w-28 {
@@ -3438,6 +3438,10 @@ input[type="number"] {
 }
 
 @media (min-width: 480px) {
+  .xs\:h-16 {
+    height: 4rem;
+  }
+
   .xs\:max-h-16 {
     max-height: 4rem;
   }
@@ -3463,10 +3467,6 @@ input[type="number"] {
 @media (min-width: 640px) {
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
-  }
-
-  .sm\:flex {
-    display: flex;
   }
 
   .sm\:grid-cols-2 {
