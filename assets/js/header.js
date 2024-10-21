@@ -5,6 +5,7 @@ const servicesBlock2 = document.getElementById("services-block-2")
 const showServicesResponsive = document.getElementById("show-services-responsive")
 const servicesBlockResponsive = document.getElementById("services-block-responsive")
 const showNavResponsive = document.getElementById("show-nav-responsive")
+const showNavResponsive2 = document.getElementById("show-nav-responsive-2")
 const wrapNavResponsive = document.getElementById("wrap-nav-responsive")
 const bgNavResponsive = document.getElementById("bg-nav-responsive")
 const closeNavResponsive = document.getElementById("close-nav-responsive")
@@ -79,6 +80,10 @@ showServicesResponsive.addEventListener('click', () => {
 })
 
 showNavResponsive.addEventListener("click", () => {
+    isShowNavResponsive = true
+    checkShowNavRespon()
+})
+showNavResponsive2.addEventListener("click", () => {
     isShowNavResponsive = true
     checkShowNavRespon()
 })
